@@ -1,0 +1,14 @@
+com\dtk\datos\Conexion.class
+com\dtk\datos\VehiculoDAO.class
+com\dtk\dominio\Propietario.class
+com\dtk\servicio\rest\ApplicationConfig.class
+com\dtk\servicio\rest\PropiedadesServiceResource.class
+com\dtk\servicio\rest\PropietarioServiceResource.class
+com\dtk\datos\PropietarioDAOimpl.class
+com\dtk\datos\VehiculoDAOimpl.class
+com\dtk\servicio\rest\VehiculoResource.class
+com\dtk\dominio\Vehiculo.class
+com\dtk\datos\PropietarioDAO.class
+com\dtk\datos\PropiedadesDAO.class
+com\dtk\dominio\Propiedades.class
+com\dtk\servicio\rest\crosOrigin.class
