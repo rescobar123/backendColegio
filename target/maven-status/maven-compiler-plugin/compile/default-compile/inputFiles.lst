@@ -1,27 +1,27 @@
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\PropietarioServiceResource.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Alumno.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Propietario.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\AlumnoService.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Inscripcion.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Propiedades.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Actividad.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\PropietarioDAOimpl.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\AlumnosGrado.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\crosOrigin.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\PropietarioDAO.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\CentroEducativo.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\VehiculoResource.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\PropiedadesServiceResource.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\Conexion.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Vehiculo.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\ApplicationConfig.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\AlumnoDaoImpl.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Grado.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\servicio\rest\CentroEducativoService.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\VehiculoDAO.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Curso.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\Docente.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\AlumnoDAO.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\PropiedadesDAO.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\datos\VehiculoDAOimpl.java
-C:\Users\robin.escobar\Desktop\Proyectos en Curso\Servicio\src\main\java\com\dtk\dominio\CursoGrado.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Alumno.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\PropietarioDAOimpl.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Actividad.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\VehiculoDAO.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Propiedades.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\AlumnoDaoImpl.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\PropiedadesServiceResource.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\PropiedadesDAO.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Inscripcion.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Vehiculo.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\ApplicationConfig.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\CursoGrado.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Grado.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\Conexion.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\PropietarioDAO.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\crosOrigin.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\CentroEducativo.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\VehiculoDAOimpl.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\AlumnoService.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\PropietarioServiceResource.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\AlumnoDAO.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Curso.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Propietario.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\AlumnosGrado.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\CentroEducativoService.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Docente.java
+C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\VehiculoResource.java

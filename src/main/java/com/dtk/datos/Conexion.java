@@ -13,7 +13,7 @@ public class Conexion {
     private static final String JDBC_USER = "dtk";
     private static final String JDBC_PASSWORD = "dtk";*/
     
-     private static final String JDBC_URL = "jdbc:mysql://192.168.0.2:3306/rescobar?useSSL=false&useTimezone=true&serverTimezone=UTC"
+     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/rescobar?useSSL=false&useTimezone=true&serverTimezone=UTC"
             + "&allowPublicKeyRetrieval=true";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "";
