@@ -26,6 +26,8 @@ public class ApplicationConfig extends Application   {
 
   
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(com.dtk.servicio.rest.AlumnoService.class);
+        resources.add(com.dtk.servicio.rest.CentroEducativoService.class);
         resources.add(com.dtk.servicio.rest.PropiedadesServiceResource.class);
         resources.add(com.dtk.servicio.rest.PropietarioServiceResource.class);
         resources.add(com.dtk.servicio.rest.VehiculoResource.class);
