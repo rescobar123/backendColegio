@@ -21,6 +21,9 @@ public class Alumno {
     private String observacion;
     private String fechaCreacion;
 
+    public Alumno() {
+    }
+
     public Alumno(int idAlumno, CentroEducativo centroEducativo, String codigoAlumno, String nombres, String apellidos, String direccion, int celular, int estado, String observacion, String fechaCreacion) {
         this.idAlumno = idAlumno;
         this.centroEducativo = centroEducativo;

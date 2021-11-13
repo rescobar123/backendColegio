@@ -57,6 +57,46 @@ public class AlumnoService implements ContainerResponseFilter {
         Response.ok(alumno);
         return alumno;
     }
+    
+    @PUT
+    @Path("/insertar")//hace referencia a /personas/{id}
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Alumno agregarAlumno(Alumno alumno) {
+        
+        String impl = new AlumnoDaoImpl().insertAlumno(alumno);
+        alumno = new Alumno(alumno.getIdAlumno());
+        alumno.setObservacion(impl);
+        Response.ok();
+        return alumno;
+    }
+    
+    
+    @PUT
+    @Path("/actualizar")//hace referencia a /personas/{id}
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Alumno upAlumno(Alumno alumno){
+        String impl = new AlumnoDaoImpl().updateAlumno(alumno);
+        Alumno alumno3 = new Alumno(alumno.getIdAlumno());
+        alumno3.setObservacion(impl);
+        Response.ok();
+        System.gc();
+        return alumno3;
+        
+    }
+    
+    @PUT
+    @Path("/delete")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Alumno deleteAlumno(Alumno alumno){
+        String impl = new AlumnoDaoImpl().deleteAlumno(alumno);
+        alumno = new Alumno(alumno.getIdAlumno());
+        alumno.setObservacion(impl);
+        Response.ok();
+        return alumno;
+    }
       @Override
     public void filter(ContainerRequestContext requestContext, ContainerResponseContext response) throws IOException {
         response.getHeaders().putSingle("Access-Control-Allow-Origin", "*");

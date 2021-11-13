@@ -4,14 +4,9 @@
  */
 package com.dtk.datos;
 
-import static com.dtk.datos.PropietarioDAOimpl.SQL_FIND_BY_ID;
-import static com.dtk.datos.PropietarioDAOimpl.SQL_INSERT;
-import static com.dtk.datos.PropietarioDAOimpl.SQL_SELECT;
-import static com.dtk.datos.VehiculoDAOimpl.SQL_DELETE;
-import static com.dtk.datos.VehiculoDAOimpl.SQL_UPDATE;
+
 import com.dtk.dominio.Alumno;
 import com.dtk.dominio.CentroEducativo;
-import com.dtk.dominio.Propietario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -30,10 +25,13 @@ public class AlumnoDaoImpl implements AlumnoDAO {
     public static final String SQL_FIND_BY_ID = "SELECT idAlumno, idCentroEducativo, codigoAlumno, nombres, "
             + "apellidos, direccion, celular, estado, observacion, fechaCreacion FROM alumno WHERE idAlumno = ?";
     
+    public static final String SQL_UPDATE = "UPDATE  alumno  SET codigoAlumno = ?, nombres = ?, "
+            + "apellidos = ?, direccion = ?, celular = ?, estado = ?, observacion = ?, fechaCreacion = ? WHERE idAlumno = ?";
     
-    public static final String SQL_INSERT = "INSERT INTO vehiculopersona (PersonaId, VehiculoId) VALUES ( ?, ?);";
+    public static final String SQL_INSERT = "INSERT INTO alumno (idCentroEducativo, codigoAlumno, nombres, "
+            + "apellidos, direccion, celular, estado, observacion, fechaCreacion) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?);";
     
-    public static final String SQL_DELETE = "DELETE FROM vehiculopersona WHERE PersonaId =   ? AND VehiculoId = ?;";
+    public static final String SQL_DELETE = "DELETE FROM alumno WHERE idAlumno =  ?";
 
     @Override
     public List<Alumno> findAllAlumnos() {
@@ -161,19 +159,17 @@ public class AlumnoDaoImpl implements AlumnoDAO {
         PreparedStatement stmt = null;
         int rows = 0;
         String mensajeRespuesta = "";
-        int idCentroEducativo  = alumno.getCentroEducativo().getIdCentroEducativo();
         try {
             conn = Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_UPDATE);
-            stmt.setInt(1, idCentroEducativo);
-            stmt.setString(2, alumno.getCodigoAlumno());
-            stmt.setString(3, alumno.getNombres());
-            stmt.setString(4, alumno.getApellidos());
-            stmt.setString(5, alumno.getDireccion());
-            stmt.setInt(6, alumno.getCelular());
-            stmt.setInt(7, alumno.getEstado());
-            stmt.setString(8, alumno.getObservacion());
-            stmt.setString(9, alumno.getFechaCreacion());
+            stmt.setString(1, alumno.getCodigoAlumno());
+            stmt.setString(2, alumno.getNombres());
+            stmt.setString(3, alumno.getApellidos());
+            stmt.setString(4, alumno.getDireccion());
+            stmt.setInt(5, alumno.getCelular());
+            stmt.setInt(6, alumno.getEstado());
+            stmt.setString(7, alumno.getObservacion());
+            stmt.setString(8, alumno.getFechaCreacion());
             stmt.setInt(9, alumno.getIdAlumno());
             
             rows = stmt.executeUpdate();

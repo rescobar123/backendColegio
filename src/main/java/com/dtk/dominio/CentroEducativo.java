@@ -18,6 +18,9 @@ public class CentroEducativo {
     private String responsable;
     private String telefonoResponable;
 
+    public CentroEducativo() {
+    }
+
     public CentroEducativo(int idCentroEducativo) {
         this.idCentroEducativo = idCentroEducativo;
     }
