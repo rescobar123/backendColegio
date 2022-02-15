@@ -13,7 +13,7 @@ import javax.ws.rs.core.Application;
  *
  * @author admin
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@javax.ws.rs.ApplicationPath("WS")
 public class ApplicationConfig extends Application   {
     
 
@@ -26,11 +26,12 @@ public class ApplicationConfig extends Application   {
 
   
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(com.dtk.servicio.rest.AlumnoService.class);
         resources.add(com.dtk.servicio.rest.CentroEducativoService.class);
-        resources.add(com.dtk.servicio.rest.PropiedadesServiceResource.class);
-        resources.add(com.dtk.servicio.rest.PropietarioServiceResource.class);
-        resources.add(com.dtk.servicio.rest.VehiculoResource.class);
+        resources.add(com.dtk.servicio.rest.ComentarioService.class);
+        resources.add(com.dtk.servicio.rest.OfertaService.class);
+        resources.add(com.dtk.servicio.rest.PropuestaService.class);
+        resources.add(com.dtk.servicio.rest.TipoEmpleoService.class);
+        resources.add(com.dtk.servicio.rest.UsuarioService.class);
         resources.add(com.dtk.servicio.rest.crosOrigin.class);
     }
     

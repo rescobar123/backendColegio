@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dtk</groupId>
-    <artifactId>Servicio</artifactId>
+    <artifactId>backendChance</artifactId>
     <version>1</version>
     <packaging>war</packaging>
 
-    <name>Servicio</name>
+    <name>backendChance</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -19,6 +19,12 @@
             <groupId>org.glassfish.metro</groupId>
             <artifactId>webservices-rt</artifactId>
             <version>2.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-crypto</artifactId>
+            <version>1.1.0</version>
             <scope>provided</scope>
         </dependency>
 
@@ -40,6 +46,18 @@
             <type>pom</type>
         </dependency>
         <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client</artifactId>
+            <version>1.21.0</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.6</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
@@ -50,6 +68,17 @@
             <artifactId>commons-dbcp2</artifactId>
             <version>2.7.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.19.4</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -74,6 +103,27 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-shade-plugin</artifactId> 
+                <executions> 
+                    <execution> 
+                        <phase>package</phase> 
+                        <goals> 
+                            <goal>shade</goal> 
+                        </goals> 
+                        <configuration> 
+                            <relocations> 
+                                <relocation> 
+                                    <pattern>org.apache.commons</pattern> 
+                                    <shadedPattern>com.example.shaded.org.apache.commons</shadedPattern> 
+                                </relocation> 
+                            </relocations> 
+                            <promoteTransitiveDependencies>true</promoteTransitiveDependencies> 
+                        </configuration> 
+                    </execution> 
+                </executions> 
+            </plugin> 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -99,16 +149,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-        <groupId>org.Apache.Tomcat.maven</groupId>
-        <artifactId>Tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
-        <configuration>
-            <url>http://localhost:8084/manager</url>
-            <server>localhost</server>
-            <path>/${project.build.finalName}</path>
-        </configuration>
-        </plugin>
         </plugins>
     </build>
 

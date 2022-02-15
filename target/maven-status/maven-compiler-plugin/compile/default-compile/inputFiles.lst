@@ -1,27 +1,26 @@
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Alumno.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\PropietarioDAOimpl.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Actividad.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\VehiculoDAO.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Propiedades.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\AlumnoDaoImpl.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\PropiedadesServiceResource.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\PropiedadesDAO.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Inscripcion.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Vehiculo.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\ApplicationConfig.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\CursoGrado.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Grado.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\Conexion.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\PropietarioDAO.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\crosOrigin.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\CentroEducativo.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\VehiculoDAOimpl.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\AlumnoService.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\PropietarioServiceResource.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\datos\AlumnoDAO.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Curso.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Propietario.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\AlumnosGrado.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\CentroEducativoService.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\dominio\Docente.java
-C:\Users\admin\OneDrive\Escritorio\CURSOS en proceso 2021\ANGULAR 2021\backendColegio\src\main\java\com\dtk\servicio\rest\VehiculoResource.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/complementos/JWT.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/ApplicationConfig.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/Conexion.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/TipoEmpleoService.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/crosOrigin.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/CentroEducativoService.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/ComentarioService.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/OfertaDaoImpl.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/OfertaDao.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/Usuario.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/TipoEmpleoDao.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/complementos/Alerta.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/UsuarioDaoImpl.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/OfertaService.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/ComentarioDao.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/complementos/Global.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/PropuestaDaoImpl.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/UsuarioDAO.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/TipoEmpleo.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/Comentario.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/UsuarioService.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/PropuestaDao.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/Oferta.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/Propuesta.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/complementos/ChanceUtils.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/PropuestaService.java
