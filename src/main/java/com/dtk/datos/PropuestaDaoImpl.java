@@ -5,7 +5,6 @@
 package com.dtk.datos;
 
 import com.dtk.complementos.Alerta;
-import static com.dtk.complementos.Global.AUTOINCREMENT;
 import static com.dtk.complementos.Global.ERROR;
 import static com.dtk.complementos.Global.ID_COLEGIO;
 import static com.dtk.complementos.Global.ROL_ALUMNO;
@@ -21,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static com.dtk.complementos.Global.AUTOINCREMENT_OFERTA;
 
 /**
  *
@@ -43,6 +43,7 @@ public class PropuestaDaoImpl implements PropuestaDao {
             + "(NULL, ?, ?, ?, ?, ?, ?, NOW(), ?, ?, ?);";
     public static final String SQL_DELETE = "DELETE  FROM propuesta WHERE idPropuesta = ?";
     
+    public static final String SQL_SELECT_TIPO_EMPLEO = "SELECT nombreEmpleo FROM tipoEmpleo WHERE idTipoEmpleo = ? ";
     public static final String SQL_UPDATE = "UPDATE  propuesta SET estado = ? WHERE idPropuesta = ?";
 
     @Override
@@ -50,6 +51,8 @@ public class PropuestaDaoImpl implements PropuestaDao {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        PreparedStatement stmt2 = null;
+        ResultSet rs2 = null;
         Propuesta propuesta = null;
         Usuario usuario = null;
         List<Propuesta> propuestas = new ArrayList<>();
@@ -79,7 +82,16 @@ public class PropuestaDaoImpl implements PropuestaDao {
                 int estado = rs.getInt("estado");
                 String certificado = rs.getString("certificado");
                 usuario = new Usuario(idUsuarioCreo);
-
+                stmt2 = conn.prepareStatement(SQL_SELECT_TIPO_EMPLEO);
+                stmt2.setInt(1, idTipoPropuesta);
+                rs2 = stmt2.executeQuery();
+                
+                if (rs2.next()) {
+                    String tipoPropuesta = rs2.getString("nombreEmpleo");
+                    usuario.setNombres(tipoPropuesta);
+                }else{
+                    usuario.setNombres("");
+                }
                 propuesta = new Propuesta(idPropuesta, idTipoPropuesta, diasLaborables, disponibilidad, precioPorHora, lugaresLaborables,
                         descripcion, fechaPropuesta, estado, certificado, usuario);
 

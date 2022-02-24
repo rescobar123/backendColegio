@@ -15,10 +15,10 @@ public class Conexion {
     private static final String JDBC_USER = "dtk";
     private static final String JDBC_PASSWORD = "dtk";*/
     
-   /*private static final String JDBC_URL = "jdbc:mysql://localhost:3306/chanceco_chance";
+   /*private static final String JDBC_URL = "jdbc:mysql://216.231.128.40:3306/chanceco_chance";
     private static final String JDBC_USER = "chanceco_chanceuser";
-    private static final String JDBC_PASSWORD = "ChanceUser2022";
-    */
+    private static final String JDBC_PASSWORD = "ChanceUser2022";*/
+    
     
     private static final String JDBC_URL = "jdbc:mysql://192.168.0.12:3306/chance?useSSL=false&useTimezone=true&serverTimezone=UTC"
             + "&allowPublicKeyRetrieval=true";
@@ -42,6 +42,7 @@ public class Conexion {
            System.out.println("**OBTENIENDO CONEXION 2**" );
           Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
            System.out.print("Obteniendo la conexion nueva perros...");
+           //return conn = getDataSource.getConnection();
            return conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
         //   return  conn = (Connection) DriverManager.getConnection();
         } catch (SQLException ex) {

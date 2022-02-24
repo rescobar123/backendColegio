@@ -20,11 +20,46 @@ public class Oferta {
     private String fechaCreacion;
     private int estado;
     private Usuario usuario;
+    private int idTipoEmpleo;
+    private String oferta;
 
     public Usuario getUsuario() {
         return usuario;
     }
 
+    public int getIdTipoEmpleo() {
+        return idTipoEmpleo;
+    }
+
+    public void setIdTipoEmpleo(int idTipoEmpleo) {
+        this.idTipoEmpleo = idTipoEmpleo;
+    }
+
+    public String getOferta() {
+        return oferta;
+    }
+
+    public void setOferta(String oferta) {
+        this.oferta = oferta;
+    }
+
+    public Oferta(int idOferta, Propuesta propuesta, int precioPorHora, String fechaInicio, String fechaFin, String horaInicio, String horaFin, String complemento, String fechaCreacion, int estado, Usuario usuario, int idTipoEmpleo, String oferta) {
+        this.idOferta = idOferta;
+        this.propuesta = propuesta;
+        this.precioPorHora = precioPorHora;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
+        this.complemento = complemento;
+        this.fechaCreacion = fechaCreacion;
+        this.estado = estado;
+        this.usuario = usuario;
+        this.idTipoEmpleo = idTipoEmpleo;
+        this.oferta = oferta;
+    }
+
+    
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }

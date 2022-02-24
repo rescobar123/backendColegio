@@ -5,7 +5,6 @@
 package com.dtk.datos;
 
 import com.dtk.complementos.Alerta;
-import static com.dtk.complementos.Global.AUTOINCREMENT;
 import static com.dtk.complementos.Global.ERROR;
 import static com.dtk.complementos.Global.SUCCESS;
 import static com.dtk.datos.OfertaDaoImpl.SQL_SELECT;
@@ -22,51 +21,76 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static com.dtk.complementos.Global.AUTOINCREMENT_OFERTA;
+import static com.dtk.complementos.Global.AUTOINCREMENT_PROPUESTA;
 
 /**
  *
  * @author robinescobar
  */
 public class ComentarioDao {
+
     public static final String SQL_INSERT = "INSERT INTO comentario"
             + "(idContenido, recibeEnvia, fechaHora, contenido, estado, idPropuesta, idOferta)"
             + "VALUES (NULL, ?, NOW(), ?, ?, ?, ?)";
+
+    public static final String SQL_INSERT_PROPUESTA = "INSERT INTO comentario"
+            + "(idContenido, recibeEnvia, fechaHora, contenido, estado, idPropuesta, idOferta)"
+            + "VALUES (NULL, ?, NOW(), ?, ?, ( " + AUTOINCREMENT_PROPUESTA + " ), ?)";
     public static final String SQL_INSERT_OFERTA = "INSERT INTO comentario"
             + "(idContenido, recibeEnvia, fechaHora, contenido, estado, idPropuesta, idOferta)"
-            + "VALUES (NULL, ?, NOW(), ?, ?, ?, ( " +AUTOINCREMENT+ " ))";
+            + "VALUES (NULL, ?, NOW(), ?, ?, ?, ( " + AUTOINCREMENT_OFERTA + " ))";
     public static final String SQL_SELECT = "SELECT idContenido, recibeEnvia, fechaHora, contenido, "
             + "estado, idPropuesta, idOferta"
-            + " FROM comentario " 
-            +"  WHERE 1 = 1 ";
-     public Alerta insertarComentario(Comentario comentario) throws InstantiationException, IllegalAccessException {
+            + " FROM comentario "
+            + "  WHERE 1 = 1 ";
+    public static final String SQL_INSERT_OFERTA_PROPUESTA = "INSERT INTO ofertaPropuesta"
+            + "(idOfertaAplicada, idOferta, fechaAplicacion, estado, "
+            + "idPropuesta) VALUES "
+            + "(NULL,?,NOW(), ?, ( " + AUTOINCREMENT_PROPUESTA + " ));";
+
+    public Alerta insertarComentario(Comentario comentario) throws InstantiationException, IllegalAccessException {
         Connection conn = null;
         PreparedStatement stmt = null;
         int rows = 0;
         Alerta alerta = null;
         try {
             conn = Conexion.getConnection();
-            System.out.println("ACA Comentario: " + comentario );
-            if(comentario.getOferta().getIdOferta() == 0){
+            System.out.println("ACA Comentario: " + comentario);
+            if (comentario.getOferta().getIdOferta() == 0) {
                 System.out.print(SQL_INSERT_OFERTA + "Oferta 0");
                 stmt = conn.prepareStatement(SQL_INSERT_OFERTA);
                 stmt.setInt(1, comentario.getRecibeEnvia());
                 stmt.setString(2, comentario.getContenido());
                 stmt.setInt(3, comentario.getEstado());
                 stmt.setInt(4, comentario.getProupesta().getIdPropuesta());
-                 
-            }else{
-                System.out.print(SQL_INSERT);
-                stmt = conn.prepareStatement(SQL_INSERT);
-                stmt.setInt(1, comentario.getRecibeEnvia());
-                stmt.setString(2, comentario.getContenido());
-                stmt.setInt(3, comentario.getEstado());
-                stmt.setInt(4, comentario.getProupesta().getIdPropuesta());
-                stmt.setInt(5, comentario.getOferta().getIdOferta());
+
+            } else {
+                if (comentario.getProupesta().getIdPropuesta() == 0) {
+                    PreparedStatement stmt2 = null;
+                    stmt2 = conn.prepareStatement(SQL_INSERT_OFERTA_PROPUESTA);
+                    stmt2.setInt(1, comentario.getOferta().getIdOferta());
+                    stmt2.setInt(2, 1);
+                    stmt2.executeUpdate();
+                    System.out.print(SQL_INSERT_OFERTA_PROPUESTA);
+                    System.out.print(SQL_INSERT_PROPUESTA);
+                    stmt = conn.prepareStatement(SQL_INSERT_PROPUESTA);
+                    stmt.setInt(1, comentario.getRecibeEnvia());
+                    stmt.setString(2, comentario.getContenido());
+                    stmt.setInt(3, comentario.getEstado());
+                    stmt.setInt(4, comentario.getOferta().getIdOferta());
+
+                } else {
+                    System.out.print(SQL_INSERT);
+                    stmt = conn.prepareStatement(SQL_INSERT);
+                    stmt.setInt(1, comentario.getRecibeEnvia());
+                    stmt.setString(2, comentario.getContenido());
+                    stmt.setInt(3, comentario.getEstado());
+                    stmt.setInt(4, comentario.getProupesta().getIdPropuesta());
+                    stmt.setInt(5, comentario.getOferta().getIdOferta());
+                }
+
             }
-            
-           
-            
-            System.out.print("hola mundo ...");
             rows = stmt.executeUpdate();
 
             alerta = new Alerta(SUCCESS, "Mensaje Enviado exitosamente");
@@ -84,9 +108,8 @@ public class ComentarioDao {
 
         return alerta;
     }
-     
-     
-      public List<Comentario> findAllComentarios(String query) throws InstantiationException, IllegalAccessException {
+
+    public List<Comentario> findAllComentarios(String query) throws InstantiationException, IllegalAccessException {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
@@ -109,7 +132,7 @@ public class ComentarioDao {
                 String fechaHora = rs.getString("fechaHora");
                 String contenido = rs.getString("contenido");
                 int estado = rs.getInt("estado");
-                propuesta  = new Propuesta(rs.getInt("idPropuesta"));
+                propuesta = new Propuesta(rs.getInt("idPropuesta"));
                 oferta = new Oferta(rs.getInt("idOferta"));
                 comentario = new Comentario(idContenido, recibaEnvia, fechaHora, contenido, estado, propuesta, oferta);
                 comentarios.add(comentario);
@@ -126,7 +149,5 @@ public class ComentarioDao {
         //return ofertas;
         return comentarios;
     }
-     
-     
 
 }

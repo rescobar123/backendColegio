@@ -1,4 +1,5 @@
 com/dtk/datos/TipoEmpleoDao.class
+com/dtk/datos/OfertaPropuestaDao.class
 com/dtk/dominio/Comentario.class
 com/dtk/servicio/rest/PropuestaService.class
 com/dtk/datos/UsuarioDAO.class
@@ -13,9 +14,11 @@ com/dtk/dominio/TipoEmpleo.class
 com/dtk/complementos/JWT.class
 com/dtk/dominio/Oferta.class
 com/dtk/complementos/ChanceUtils.class
+com/dtk/dominio/OfertaPropuesta.class
 com/dtk/complementos/Alerta.class
 com/dtk/servicio/rest/OfertaService.class
 com/dtk/datos/UsuarioDaoImpl.class
+com/dtk/servicio/rest/OfertaPropuestaService.class
 com/dtk/datos/PropuestaDao.class
 com/dtk/servicio/rest/UsuarioService.class
 com/dtk/servicio/rest/TipoEmpleoService.class

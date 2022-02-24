@@ -83,9 +83,9 @@ public class PropuestaService {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/listarUsuario")
-    public List<Propuesta> getAllPropuestasByIdUser(@QueryParam("idUser") String idUser) {
-        String query = " AND idUsuarioCreo  = " + idUser;
+    @Path("/listarPropuestasByUser")
+    public List<Propuesta> getAllPropuestasByIdUser(@QueryParam("idUsuarioCreo") String idUsuarioCreo) {
+        String query = " AND idTipoPropuesta != 0 AND idUsuarioCreo  = " + idUsuarioCreo;
         List<Propuesta> propuestas = new PropuestaDaoImpl().findAllPropuestas(query);
         Response.ok();
         System.gc();

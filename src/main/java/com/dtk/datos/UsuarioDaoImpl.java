@@ -23,7 +23,7 @@ import java.util.logging.Logger;
  */
 public class UsuarioDaoImpl implements UsuarioDAO {
 
-    public static final String SQL_FIND_USER = "SELECT  nombres, apellidos, idUsuario, direccion, educacion, rol,  genero, cv, foto, email, password, "
+    public static final String SQL_FIND_USER = "SELECT  email, nombres, apellidos, idUsuario, direccion, educacion, rol,  genero, cv, foto, email, password, "
             + "fechaNacimiento, educacion, vacunaCovid FROM usuario ";
     public static final String SQL_INSERT = "INSERT INTO usuario (idUsuario, email, password, nombres, apellidos, rol, direccion, fechaNacimiento"
             + ", educacion, genero, vacunaCovid, cv, foto, fechaCreacion) "
@@ -190,6 +190,8 @@ public class UsuarioDaoImpl implements UsuarioDAO {
                     String foto = rs.getString("foto");
                     String genero = rs.getString("genero");
                     String vacunaCovid = rs.getString("vacunaCovid");
+                    String email = rs.getString("email");
+                    usuario.setEmail(email);
                     usuario.setNombres(nombres);
                     usuario.setApellidos(apellidos);
                     usuario.setRol(rol);

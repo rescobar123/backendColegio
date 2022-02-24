@@ -3,8 +3,10 @@
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/Conexion.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/TipoEmpleoService.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/crosOrigin.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/OfertaPropuesta.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/CentroEducativoService.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/ComentarioService.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/OfertaPropuestaService.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/OfertaDaoImpl.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/OfertaDao.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/Usuario.java
@@ -16,6 +18,7 @@
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/complementos/Global.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/PropuestaDaoImpl.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/UsuarioDAO.java
+/home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/datos/OfertaPropuestaDao.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/TipoEmpleo.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/dominio/Comentario.java
 /home/robinescobar/Escritorio/PROYECTOS EN PROCESO/CHANCEEEEE/backendChance/src/main/java/com/dtk/servicio/rest/UsuarioService.java

@@ -14,10 +14,13 @@ import java.util.List;
  */
 public interface OfertaDao {
     public List<Oferta> findAllOferas(String query);
+    public List<Oferta> findAllOferasPublic(String query, int idUsuario);
     
     public Oferta findOfertaById(Oferta oferta);
     
     public Alerta insertarOferta(Oferta oferta);
+    
+    public Alerta insertarOfertaPublic(Oferta oferta);
     
     public Alerta actualizarOferta(Oferta oferta);
     

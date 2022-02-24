@@ -14,9 +14,12 @@ public class Global {
    public static String SUCCESS = "success";
    public static String ERROR = "error";
    public static String ROL_ALUMNO = "ALUM";
-   public static String AUTOINCREMENT = "SELECT `AUTO_INCREMENT` + "
+   public static String AUTOINCREMENT_OFERTA = "SELECT `AUTO_INCREMENT` + "
            + "1 FROM  INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'chance' "
            + "AND   TABLE_NAME   = 'oferta' ";
+   public static String AUTOINCREMENT_PROPUESTA = "SELECT `AUTO_INCREMENT` + "
+           + "1 FROM  INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'chance' "
+           + "AND   TABLE_NAME   = 'propuesta' ";
    public static String KEY_JWT = "colegio";
    public static long DATE_ACTUAL = System.currentTimeMillis();
 }
